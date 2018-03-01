@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqlieTest_x.FormsPage">
+    <ContentPage.Content>
+            <StackLayout Padding="20">
+                <Label Text="Name" FontSize="25"/>
+                <Entry x:Name="memberName" Placeholder="Enter Name"></Entry>
+                <Label Text="Age" FontSize="25"/>
+                <Entry x:Name="memberAge" Placeholder="Enter Age"></Entry>
+
+            <Button Text="Insert Members" BackgroundColor="Gray" TextColor="White" Clicked="InsertMember"/>
+            <Button Text="Show Memebrs" BackgroundColor="Maroon" TextColor="White" Clicked="ShowMembers"/>
+
+            <ListView x:Name="xlist" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Spacing="2" HorizontalOptions="Center">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Name: "  FontSize="16"/>
+                                    <Label x:Name="firstName"
+                                    Text="{Binding Name}"
+                                    FontSize="16"
+                                    TextColor="Red"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Age: "  FontSize="16"/>
+                                    <Label x:Name="middleName"
+                                    Text="{Binding Age}"
+                                    FontSize="16"
+                                    TextColor="Red"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="ID: "  FontSize="16"/>
+                                    <Label x:Name="ID"
+                                    Text="{Binding ID}"
+                                    FontSize="16"
+                                    TextColor="Red"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

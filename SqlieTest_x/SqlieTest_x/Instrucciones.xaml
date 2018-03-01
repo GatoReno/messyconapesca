@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqlieTest_x.Instrucciones">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,10,10,10">
+                    <Label Text="Bienvenido a Conapesca"
+                        HorizontalOptions="CenterAndExpand"
+                          FontSize="Medium"
+
+                           />
+                <Label
+                    Margin="0,20,0,0"
+                    Text="Instrucciones de uso:"
+                        HorizontalOptions="CenterAndExpand"
+                     FontSize="Medium"
+                           />
+              
+                <Editor
+                    FontSize="Small"
+                    Text="Conapesca te provee esta herramienta para que
+                    puedas trabajar más comodo, tu unica labor para utilizar
+                    esta App de manera correta es asegurarte de cumplir 
+                    los siguientes conecptos"
+                    HorizontalOptions="CenterAndExpand"
+                    />
+                <Label
+                    Margin="0,20,0,0"
+                        FontSize="Medium"
+                        Text="Conceptos para el uso Conapesca Serice"
+                        HorizontalOptions="CenterAndExpand"/>
+
+
+
+                <Label Text="Uso de datos"
+                       Margin="0,20,0,0"
+                        HorizontalOptions="CenterAndExpand"
+                       TextColor="Red"
+                       FontSize="Small"
+                           />
+                <Label Text="GPS activado en todo momento"
+                        HorizontalOptions="CenterAndExpand"
+                       TextColor="Red"
+                       FontSize="Small"
+                           />
+                <Label Text="Datos de acceso"
+                        HorizontalOptions="CenterAndExpand"
+                       TextColor="Red"
+                       FontSize="Small"
+                       />
+
+
+                <Label
+                    Margin="0,20,0,0"
+                        FontSize="Medium"
+                        Text="Consejos de uso"
+                        HorizontalOptions="CenterAndExpand"
+                    />
+
+
+                    <Editor
+                    FontSize="Small"
+                    Text="Esta aplicación esta hecha con el fin de registrar
+                        tus pasos, te aconsejamos que cada que la inicies piques
+                        el poton principal, con ello harás un registro nuevo de tu
+                        ubicación , esto no es necesario ni obligatorio.
+                        La aplicación estará registrando tu actividad siempre que 
+                        esta se encuentre en segundo plano, es decir. Puedes ocupar
+                        otras aplicaciones sin preocuparte por el funcionamiento de esta.
+                        Si picas el boton de usuario del menu principal
+                        te encontrarás con una lista y una sección con el 
+                        nombre de tu usuario. La lista son las ultimas
+                        ubicaciones registradas. La aplicación te avisará si no tienes
+                        tus datos o tu GPS activo, RECUERDA QUE SON MUY IMPORTANTES
+                        PARA EL FUNCIONAMIENTO OPTIMO DE ESTA APP."
+                    HorizontalOptions="CenterAndExpand"
+                    />
+
+
+                <Label
+                    Margin="0,20,0,0"
+                    Text="Cerrar sesión "
+                        HorizontalOptions="CenterAndExpand"
+                     FontSize="Medium"
+                           />
+
+                <Editor
+                    FontSize="Small"
+                    Text="Para salir de la aplicación debes dirigirte al boton de usuario
+                    y dejar presionado donde viene tu nombre de usuario, se desplegará 
+                    una pantalla , oprimos en borrar y listo."
+                    HorizontalOptions="CenterAndExpand"
+                    />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
